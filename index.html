@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="de" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AKA Recht · Aktenmappe für Rechtssachen mit KI-Leiste · MikaTec</title>
+<link rel="stylesheet" href="style.css?v=261">
+<link rel="icon" type="image/png" href="logos/mikatec-mt-favicon.png">
+<link rel="canonical" href="https://mika-tec.com/aka-recht.html">
+<meta name="description" content="AKA Recht ist eine Desktop-App für eigene Rechtssachen: Dokumente, Beteiligte, Chronologie, Fristenrechnung nach §§ 187, 188, 193 BGB und eine KI-Leiste, in der Claude oder OpenAI mit Ihrem Abo oder Schlüssel in der Akte arbeiten; alles, was schreibt, fragt vorher. Läuft lokal ohne Konto und Cloud. Weitergabe auf Anfrage.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AKA Recht · Aktenmappe für Rechtssachen mit KI-Leiste">
+<meta property="og:description" content="Kündigung, Bußgeld, Bescheid, Mietstreit: Unterlagen und Fristen an einem Ort auf dem eigenen Rechner, mit Ihrer eigenen KI in der Akte. Weitergabe auf Anfrage.">
+<meta property="og:image" content="https://mika-tec.com/bilder/02-fallakte.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script>(function(){var s=null;try{s=sessionStorage.getItem('mt-theme')}catch(e){}var q=new URLSearchParams(location.search).get('mt'),h=new URLSearchParams(location.hash.slice(1)).get('mt'),c=q||h||s;if(c!=='light'&&c!=='dark')c=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';document.documentElement.dataset.theme=c;})();</script>
+<script src="theme.js?v=261" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://mika-tec.com/aka-recht.html#webpage",
+      "url": "https://mika-tec.com/aka-recht.html",
+      "name": "AKA Recht · Aktenmappe für Rechtssachen mit KI-Leiste · MikaTec",
+      "description": "AKA Recht ist eine Desktop-App für eigene Rechtssachen nach deutschem Recht: Dokumente, Beteiligte, Chronologie, Fristenrechnung und eine KI-Leiste mit Freigaben.",
+      "inLanguage": "de-DE",
+      "dateModified": "2026-10-21",
+      "isPartOf": {
+        "@id": "https://mika-tec.com/#website"
+      },
+      "about": {
+        "@id": "https://mika-tec.com/aka-recht.html#software"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Start",
+          "item": "https://mika-tec.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Projekte",
+          "item": "https://mika-tec.com/projekte.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "AKA Recht",
+          "item": "https://mika-tec.com/aka-recht.html"
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://mika-tec.com/aka-recht.html#software",
+      "name": "AKA Recht",
+      "description": "Desktop-App und Aktenmappe für eigene Rechtssachen nach deutschem Recht, mit Fristenrechnung und KI-Leiste für Claude und OpenAI mit Freigaben.",
+      "url": "https://mika-tec.com/aka-recht.html",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "macOS",
+      "softwareVersion": "1.0",
+      "inLanguage": "de-DE",
+      "screenshot": "https://mika-tec.com/bilder/02-fallakte.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Hasan Tepegöz"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "MikaTec"
+      }
+    }
+  ]
+}
+</script>
+
+<meta property="og:url" content="https://mika-tec.com/aka-recht.html">
+</head>
+<body data-page="AKA-Recht">
+<svg class="icon-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><symbol id="i-desktop" viewBox="0 0 24 24"><rect x="2.5" y="4" width="19" height="13" rx="2"></rect><path d="M9 21h6M12 17v4"></path></symbol><symbol id="i-chip" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"></rect><rect x="10" y="10" width="4" height="4"></rect><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"></path></symbol><symbol id="i-browser" viewBox="0 0 24 24"><rect x="2.5" y="4" width="19" height="16" rx="2"></rect><path d="M2.5 9h19M5.6 6.6h.01M8 6.6h.01M10.4 6.6h.01"></path></symbol><symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5.5" rx="8" ry="3"></ellipse><path d="M4 5.5v13c0 1.7 3.6 3 8 3s8-1.3 8-3v-13M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"></path></symbol><symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="9.5" rx="2"></rect><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5M12 14.5v2.5"></path></symbol><symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 1 3.6 10.8c-.7.6-1.1 1.3-1.1 2.2H9.5c0-.9-.4-1.6-1.1-2.2A6 6 0 0 1 12 3z"></path></symbol><symbol id="i-box" viewBox="0 0 24 24"><path d="M21 8.5v7L12 21l-9-5.5v-7L12 3l9 5.5z"></path><path d="M3.3 8.3 12 13.5l8.7-5.2M12 13.5V21"></path></symbol><symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 12a8.5 8.5 0 0 1-8.5 8.5c-1.5 0-3-.4-4.2-1.1L3 21l1.6-5.3A8.5 8.5 0 1 1 21 12z"></path></symbol><symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="15" r="4.5"></circle><path d="M11.2 11.8 20 3M15.5 7.5 18 10M18.5 4.5 21 7"></path></symbol><symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16M13 5l7 7-7 7"></path></symbol><symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21S5.5 15.7 5.5 11a6.5 6.5 0 0 1 13 0C18.5 15.7 12 21 12 21z"></path><circle cx="12" cy="10.8" r="2.4"></circle></symbol><symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"></circle><path d="M3.5 12h17M12 3.5c2.5 2.4 3.8 5.2 3.8 8.5s-1.3 6.1-3.8 8.5c-2.5-2.4-3.8-5.2-3.8-8.5s1.3-6.1 3.8-8.5z"></path></symbol><symbol id="i-ext" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4 11 13M18 13v6a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 19V8a1.5 1.5 0 0 1 1.5-1.5H11"></path></symbol><symbol id="i-scan" viewBox="0 0 24 24"><path d="M4 8V5.5A1.5 1.5 0 0 1 5.5 4H8M16 4h2.5A1.5 1.5 0 0 1 20 5.5V8M20 16v2.5a1.5 1.5 0 0 1-1.5 1.5H16M8 20H5.5A1.5 1.5 0 0 1 4 18.5V16M4 12h16"></path></symbol><symbol id="i-ruler" viewBox="0 0 24 24"><rect x="2.8" y="9" width="18.4" height="6" rx="1.2" transform="rotate(-45 12 12)"></rect><path d="m8.2 12.2 1.4 1.4M11 9.4l1.4 1.4M13.8 6.6l1.4 1.4"></path></symbol><symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4"></path><path d="M5 4c4-2.2 7 2.2 11 0v9c-4 2.2-7-2.2-11 0"></path></symbol><symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3.5 7 8.5 6 8.5-6"></path></symbol><symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></symbol><symbol id="i-mail-open" viewBox="0 0 24 24"><path d="m3 9 9-6 9 6v9.5A1.5 1.5 0 0 1 19.5 20h-15A1.5 1.5 0 0 1 3 18.5V9z"></path><path d="m3.5 9.5 8.5 6 8.5-6"></path></symbol><symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 2.5h8L19 7.5v13A1.5 1.5 0 0 1 17.5 22h-11A1.5 1.5 0 0 1 5 20.5v-16A1.5 1.5 0 0 1 6.5 2.5z"></path><path d="M14 2.5V8h5M8.5 12h7M8.5 16h7"></path></symbol><symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"></path></symbol><symbol id="i-list" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2"></rect><path d="M9 4v2h6V4M9 11h6M9 15h6"></path></symbol><symbol id="i-tool" viewBox="0 0 24 24"><path d="M14.5 6.5a4 4 0 0 0-5.3 5.3L4 17v3h3l5.2-5.2a4 4 0 0 0 5.3-5.3l-2.5 2.5-2.5-.5-.5-2.5 2.5-2.5z"></path></symbol><symbol id="i-folder" viewBox="0 0 24 24"><path d="M3 6.5A1.5 1.5 0 0 1 4.5 5h5l2 2.5h8A1.5 1.5 0 0 1 21 9v9.5a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 18.5v-12z"></path></symbol><symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3.5 2"></path></symbol><symbol id="i-path" viewBox="0 0 24 24"><path d="M12 3v18M12 7H6M12 12h6M12 17H7"></path><circle cx="12" cy="7" r="1.4"></circle><circle cx="12" cy="12" r="1.4"></circle><circle cx="12" cy="17" r="1.4"></circle></symbol><symbol id="ic-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"></path></symbol><symbol id="ic-up" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"></path></symbol><symbol id="ic-home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10H3V10Z"></path><path d="M9 20v-7h6v7"></path></symbol><symbol id="ic-code" viewBox="0 0 24 24"><path d="m8 6-6 6 6 6m8-12 6 6-6 6M14 3l-4 18"></path></symbol><symbol id="ic-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"></rect><rect x="14" y="3" width="7" height="7" rx="1"></rect><rect x="3" y="14" width="7" height="7" rx="1"></rect><rect x="14" y="14" width="7" height="7" rx="1"></rect></symbol><symbol id="ic-shop" viewBox="0 0 24 24"><path d="m4 8 1 13h14l1-13H4Z"></path><path d="M8 8V6a4 4 0 0 1 8 0v2"></path></symbol><symbol id="ic-user" viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"></circle><path d="M4 22v-2a8 8 0 0 1 16 0v2"></path></symbol><symbol id="ic-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m4 7 8 6 8-6"></path></symbol><symbol id="ic-moon" viewBox="0 0 24 24"><path d="M21 14a9 9 0 0 1-11-11 9 9 0 1 0 11 11Z"></path></symbol><symbol id="ic-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle><path d="M12 1v3m0 16v3M1 12h3m16 0h3M4 4l2 2m12 12 2 2M4 20l2-2M18 6l2-2"></path></symbol><symbol id="ic-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"></path></symbol><symbol id="ic-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"></path></symbol><symbol id="ic-search" viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"></circle><path d="m15 15 6 6"></path></symbol><symbol id="ic-monitor" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"></rect><path d="M8 22h8m-4-5v5"></path></symbol><symbol id="ic-browser" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="18" rx="2"></rect><path d="M2 8h20M6 5.5h.1m3 0h.1"></path></symbol><symbol id="ic-ai" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><circle cx="4" cy="4" r="2"></circle><circle cx="20" cy="4" r="2"></circle><circle cx="4" cy="20" r="2"></circle><circle cx="20" cy="20" r="2"></circle><path d="m6 6 4 4m4 4 4 4m-4-4 4-4M6 18l4-4"></path></symbol><symbol id="ic-clean" viewBox="0 0 24 24"><path d="M7 6h8l2 5v10H5V11l2-5Zm2 0V2h7v3m-7-2H7M5 14h12m3-9 2-1m-2 4h2"></path></symbol><symbol id="ic-cable" viewBox="0 0 24 24"><path d="M5 2v4m4-4v4M3 6h8v3a4 4 0 0 1-8 0V6Zm4 7v4a4 4 0 0 0 8 0v-2m-2-6h8v6h-8V9Zm2 0V6h4v3"></path></symbol><symbol id="ic-keyboard" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"></rect><path d="M6 9h.1m4 0h.1m4 0h.1m4 0h.1M6 12h.1m4 0h.1m4 0h.1m4 0h.1M7 16h10"></path></symbol><symbol id="ic-drive" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="3"></rect><path d="M4 16h16M8 19h.1m3 0h.1"></path><circle cx="12" cy="9" r="3"></circle></symbol><symbol id="ic-audio" viewBox="0 0 24 24"><path d="M3 14v-3a9 9 0 0 1 18 0v3M3 12h4v9H3v-9Zm14 0h4v9h-4v-9Z"></path></symbol><symbol id="ic-desk" viewBox="0 0 24 24"><path d="M2 13h20M4 13v9m16-9v9M9 13V9h6v4"></path><rect x="5" y="2" width="14" height="7" rx="1"></rect></symbol><symbol id="ic-zoom" viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"></path></symbol></svg>
+<a class="skip-link" href="#inhalt">Zum Inhalt</a>
+<header class="site-header"><div class="header-inner"><a class="site-brand" href="https://mika-tec.com/index.html"><img src="logos/mikatec-mt.png" alt="" width="42" height="42"><span>MikaTec<small>Software &amp; IT</small></span></a><nav id="hauptnavigation" class="site-nav" aria-label="Hauptnavigation"><a href="https://mika-tec.com/index.html" data-nav="Entwurf">Start</a><a href="https://mika-tec.com/leistungen.html" data-nav="Leistungen">Leistungen</a><a href="https://mika-tec.com/projekte.html" data-nav="Projekte" aria-current="page">Projekte</a><a href="https://mika-tec.com/schulungen.html" data-nav="Schulungen">Schulungen</a><a href="https://mika-tec.com/ueber.html" data-nav="Ueber">Über MikaTec</a><a href="https://mika-tec.com/kontakt.html" data-nav="Kontakt">Kontakt</a></nav><div class="header-actions"><button class="theme-toggle" type="button" aria-label="Dunkles Design einschalten"><svg class="ic"><use href="#ic-moon"></use></svg></button><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="hauptnavigation">Menü <span aria-hidden="true">☰</span></button></div></div></header>
+
+<main id="inhalt" tabindex="-1">
+<noscript><style>
+body{grid-template-rows:auto minmax(0,1fr)}.header-inner{height:auto;flex-wrap:wrap;padding-block:16px;gap:16px}.site-nav{display:flex;position:static;flex-wrap:wrap;gap:16px;margin:0;padding:0;max-height:none;box-shadow:none;border:0}.site-nav a{padding:6px 0}.header-actions,.section-tabs,.legal-mobile-chapter,.toolkit-switch,.toolkit-categories,.toolkit-mobile-select,.project-toolbar,.shop-search,.results-line,#project-detail{display:none!important}.tab-panel[hidden],.toolkit-view[hidden],.toolkit-category[hidden]{display:block!important}.tab-panel,.toolkit-category{margin-bottom:24px}
+</style></noscript>
+<div class="page-shell"><a class="back-link" href="https://mika-tec.com/projekt.html?id=aka-recht">← Zur Projektübersicht für AKA Recht</a><div class="page-head page-hero">
+      <span class="sec-kicker">AKA Recht</span>
+      <h1>Ihre Aktenmappe für Rechtssachen, mit KI</h1>
+      <p>Kündigung, Bußgeld, Bescheid vom Amt, Mietstreit: AKA Recht ordnet Briefe, Belege und
+      Fristen in einer Mappe auf Ihrem Rechner. Neu in Version 1.0 ist die Desktop-App mit KI-Leiste:
+      Ihr eigener Assistent liest die Akte, rechnet Fristen nach und bereitet Entwürfe vor, und alles,
+      was die Akte verändert, fragt Sie vorher.</p>
+      <div class="cta-row" style="">
+        <a href="https://mika-tec.com/kontakt.html?anliegen=aka-recht#anfrage" class="btn btn-primary">Anfrage stellen <svg class="ic"><use href="#i-arrow"></use></svg></a>
+        <a href="mailto:info@mika-tec.com?subject=AKA%20Recht" class="btn btn-ghost">info@mika-tec.com</a>
+      </div>
+      <p style="font-size:.92rem">Version 1.0 vom 21.10.2026 · Desktop-App, auf dem Mac geprüft; Windows und Linux folgen · Weitergabe auf Anfrage, kein freier Download</p>
+    </div><div class="section-tabs" role="tablist" aria-label="Seitenbereiche"><button type="button" role="tab" id="tab-einblick" aria-controls="panel-einblick" aria-selected="true" tabindex="0" data-tab="einblick">Bilder</button><button type="button" role="tab" id="tab-funktionen" aria-controls="panel-funktionen" aria-selected="false" tabindex="-1" data-tab="funktionen">Funktionen</button><button type="button" role="tab" id="tab-ki" aria-controls="panel-ki" aria-selected="false" tabindex="-1" data-tab="ki">KI-Leiste</button><button type="button" role="tab" id="tab-einstieg" aria-controls="panel-einstieg" aria-selected="false" tabindex="-1" data-tab="einstieg">Einstieg</button><button type="button" role="tab" id="tab-sicherheit" aria-controls="panel-sicherheit" aria-selected="false" tabindex="-1" data-tab="sicherheit">Sicherheit &amp; Grenzen</button><button type="button" role="tab" id="tab-fragen" aria-controls="panel-fragen" aria-selected="false" tabindex="-1" data-tab="fragen">Häufige Fragen</button></div><section role="tabpanel" class="tab-panel" id="panel-einblick" aria-labelledby="tab-einblick" tabindex="0"><span id="einblick" class="tab-anchor"></span><div style="">
+      <div class="page-head">
+        <span class="sec-kicker">Einblick</span>
+        <h2>So sieht es aus</h2>
+        <p>Alle Bilder zeigen den mitgelieferten Beispielfall. Er ist erfunden, es kommen keine echten Personen vor. Das Gespräch in der KI-Leiste ist ein nachgestelltes Beispiel.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:16px">
+        <div class="shot"><div class="bar"><i></i><i></i><i></i><span class="t">Übersicht</span></div><img src="bilder/01-zentrale.jpg" alt="AKA Recht: Übersicht der Mappe mit Fällen, überfälligen und nächsten Fristen" width="1600" height="1000" loading="lazy"></div>
+        <div class="shot"><div class="bar"><i></i><i></i><i></i><span class="t">Fallakte mit KI-Leiste</span></div><img src="bilder/02-fallakte.jpg" alt="AKA Recht: Fallakte mit Rolle, Ziel, nächsten Fristen und offenen Aufgaben, rechts die KI-Leiste mit einem Gespräch" width="1600" height="1000" loading="lazy"></div>
+        <div class="shot"><div class="bar"><i></i><i></i><i></i><span class="t">Chronologie</span></div><img src="bilder/03-chronologie.jpg" alt="AKA Recht: Chronologie als Zeitpfad mit Ereignissen und Fundstellen" width="1600" height="1000" loading="lazy"></div>
+        <div class="shot"><div class="bar"><i></i><i></i><i></i><span class="t">Fristen</span></div><img src="bilder/04-fristen.jpg" alt="AKA Recht: Fristen mit Art, Prüfstatus und Rechtsgrundlage" width="1600" height="1000" loading="lazy"></div>
+        <div class="shot"><div class="bar"><i></i><i></i><i></i><span class="t">Dokumente</span></div><img src="bilder/05-dokumente.jpg" alt="AKA Recht: Dokumentliste mit Kennung, Datum und Stand, rechts die KI-Leiste" width="1600" height="1000" loading="lazy"></div>
+        <div class="shot"><div class="bar"><i></i><i></i><i></i><span class="t">Freigaben</span></div><img src="bilder/06-einstellungen.jpg" alt="AKA Recht: Einstellungen mit Profil und Freigaben je Zugriff für beide Assistenten" width="1600" height="1000" loading="lazy"></div>
+      </div>
+    </div></section><section role="tabpanel" class="tab-panel" id="panel-funktionen" aria-labelledby="tab-funktionen" tabindex="0" hidden><span id="funktionen" class="tab-anchor"></span><div style="">
+      <div class="page-head">
+        <span class="sec-kicker">Funktionen</span>
+        <h2>Was die Mappe kann</h2>
+        <p>Eine Rechtsakte braucht mehr als Ordner. Diese Dinge nimmt Ihnen AKA Recht ab.</p>
+      </div>
+      <div class="bento">
+        <div class="card b-7">
+          <div class="ico"><svg class="ic"><use href="#i-folder"></use></svg></div>
+          <h2>Jede Sache ist ein Fall</h2>
+          <p>Jeder Fall bekommt eine feste Kennung und feste Ordner von Eingang bis Archiv. So finden Sie auch nach
+          Monaten wieder, was wohin gehört.</p>
+          <ul>
+            <li>Dokumente mit Vorschau, Kennung und Anlagennummer; PDF, Word, E-Mail und Text werden gelesen</li>
+            <li>Beteiligte mit Rolle und Funktion, Verfahren mit Stelle und Aktenzeichen</li>
+            <li>Journal, das den Verlauf festhält</li>
+            <li>Originale werden nie verändert, Prüfsummen machen Änderungen erkennbar</li>
+          </ul>
+        </div>
+
+        <div class="card b-5">
+          <div class="ico"><svg class="ic"><use href="#i-clock"></use></svg></div>
+          <h2>Fristen mit Rechenweg</h2>
+          <p>Das Fristende wird nach §§ 187, 188 und 193 BGB berechnet und Schritt für Schritt gezeigt.</p>
+          <ul>
+            <li>Wochenenden und landesweite Feiertage aller 16 Bundesländer</li>
+            <li>Jede Frist nennt Auslöser und Rechtsgrundlage</li>
+            <li>„Bestätigt“ gibt es nur mit Nachweis</li>
+            <li>Welche Frist gilt und wann sie beginnt, klären Sie selbst</li>
+          </ul>
+        </div>
+
+        <div class="card b-5">
+          <div class="ico"><svg class="ic"><use href="#i-path"></use></svg></div>
+          <h2>Chronologie als Zeitpfad</h2>
+          <p>Die Zeit läuft in der Mitte. Links stehen die anderen Stellen, rechts Ihre eigenen Schritte.</p>
+          <ul>
+            <li>Kernereignisse auf einen Klick</li>
+            <li>Anlass und Reaktion mit Abstand, etwa „2 Tage später“</li>
+            <li>Jede Fundstelle öffnet das Dokument</li>
+            <li>Unsichere Zeitpunkte bleiben als unsicher sichtbar</li>
+          </ul>
+        </div>
+
+        <div class="card b-7">
+          <div class="ico"><svg class="ic"><use href="#i-doc"></use></svg></div>
+          <h2>Entwürfe, Vorlagen und Merkblätter</h2>
+          <p>Vom ersten Entwurf bis zur versandten Fassung bleibt nachvollziehbar, was wann galt.</p>
+          <ul>
+            <li>Schreibvorlagen, die Absender, Datum und Fallkennung einsetzen, auch als Word-Datei</li>
+            <li>Merkblätter zu Verfahrensarten, jedes mit Prüfdatum</li>
+            <li>Geprüfte und versandte Fassungen werden als unveränderliche Kopie eingefroren</li>
+            <li>Texterkennung für Fotos und Scans, wenn das Programm tesseract installiert ist</li>
+          </ul>
+        </div>
+
+        <div class="card b-5">
+          <div class="ico"><svg class="ic"><use href="#i-db"></use></svg></div>
+          <h2>Sicherung, die geprüft ist</h2>
+          <p>Eine Sicherung nützt nur, wenn sie sich wiederherstellen lässt.</p>
+          <ul>
+            <li>Jede Sicherung wird nach dem Schreiben zurückgelesen</li>
+            <li>Die Probe entpackt sie und prüft Akten und Prüfsummen</li>
+            <li>Das Sicherungsziel bestimmen Sie, auf Wunsch ein zweites dazu</li>
+          </ul>
+        </div>
+
+        <div class="card b-7">
+          <div class="ico"><svg class="ic"><use href="#i-desktop"></use></svg></div>
+          <h2>Eine Mappe, ein Ordner</h2>
+          <p>Die Mappe ist ein gewöhnlicher Ordner auf Ihrem Rechner. Die App öffnet ihn, mehr nicht.</p>
+          <ul>
+            <li>Kein Konto, kein Server, keine Datenbank; die Ordnungsdaten liegen lesbar in der Akte</li>
+            <li>Die Mappe lässt sich kopieren, verschieben und mit einer zweiten App-Installation weiterführen</li>
+            <li>Auch außerhalb der App bleibt sie für Assistenten wie Claude Code, Codex oder Cursor lesbar</li>
+          </ul>
+        </div>
+      </div>
+    </div></section><section role="tabpanel" class="tab-panel" id="panel-ki" aria-labelledby="tab-ki" tabindex="0" hidden><span id="ki" class="tab-anchor"></span><div style="">
+      <div class="page-head">
+        <span class="sec-kicker">KI-Leiste</span>
+        <h2>Ihre KI arbeitet in der Mappe</h2>
+        <p>AKA Recht bringt keine eigene KI mit. Die Leiste rechts verbindet die App mit dem Assistenten, den Sie schon haben, und gibt ihm die Werkzeuge für die Akte.</p>
+      </div>
+      <div class="bento">
+        <div class="card b-7">
+          <div class="ico"><svg class="ic"><use href="#i-chip"></use></svg></div>
+          <h2>Zwei Assistenten zur Wahl</h2>
+          <p>ASA verbindet Claude von Anthropic, AKA verbindet die Modelle von OpenAI. Beide mit Ihrem Abo oder mit Ihrem eigenen Schlüssel.</p>
+          <ul>
+            <li>ASA: Anmeldung über Claude Code oder ein API-Schlüssel von Anthropic</li>
+            <li>AKA: „Mit ChatGPT anmelden“ oder ein API-Schlüssel von OpenAI</li>
+            <li>Modell frei wählbar, Kosten werden bei Schlüsseln geschätzt und mitgezählt</li>
+            <li>Ein Gespräch je Fall und Assistent; auf Wunsch sehen beide Assistenten die Beiträge des anderen</li>
+          </ul>
+        </div>
+
+        <div class="card b-5">
+          <div class="ico"><svg class="ic"><use href="#i-key"></use></svg></div>
+          <h2>Freigaben in drei Stufen</h2>
+          <p>Für Akte, Dateien, Web und Terminal wählen Sie je Zugriff: aus, Rückfrage oder automatisch.</p>
+          <ul>
+            <li>Profile „voll“, „vorsichtig“, „nur lesen“ und „aus“ mit einem Klick</li>
+            <li>Feste Haltepunkte fragen immer: jedes Werkzeug, das in die Akte schreibt, und jeder Befehl, der löscht, versendet oder veröffentlicht</li>
+            <li>Jede Freigabe und jeder Werkzeugaufruf stehen im Protokoll</li>
+          </ul>
+        </div>
+
+        <div class="card b-5">
+          <div class="ico"><svg class="ic"><use href="#i-list"></use></svg></div>
+          <h2>36 Aktenwerkzeuge</h2>
+          <p>Der Assistent arbeitet nicht in den Dateien, sondern über Werkzeuge mit klaren Regeln.</p>
+          <ul>
+            <li>Lesen: Fälle, Übersicht, Dokumenttext, Suche, Fristenrechner, Journal, Rechtsquellen</li>
+            <li>Schreiben nur nach Ihrer Freigabe: Fristen, Aufgaben, Ereignisse, Notizen, Entwürfe, Sicherung</li>
+            <li>AKA erhält die Werkzeuge nur lesend; Änderungen schlägt er als Aufruf vor</li>
+            <li>Kein Versand, keine Einreichung, kein Löschen durch Werkzeuge</li>
+          </ul>
+        </div>
+
+        <div class="card b-7">
+          <div class="ico"><svg class="ic"><use href="#i-doc"></use></svg></div>
+          <h2>Prüfabläufe als Befehle</h2>
+          <p>Sieben feste Anleitungen führen den Assistenten durch wiederkehrende Aufgaben, mit Belegpflicht und ohne Raten.</p>
+          <ul>
+            <li>Fallaufnahme, Sachverhalt, Recherche, Fristencheck, Entwurf, Gegenprüfung, Übergabe</li>
+            <li>Ungeprüftes wird als solches markiert, Normen mit Absatz und Gesetz, Urteile mit Gericht, Datum und Aktenzeichen</li>
+            <li>Anweisungen in Dokumenten gelten als Quelleninhalt, nie als Befehl</li>
+          </ul>
+        </div>
+
+        <div class="card b-5">
+          <div class="ico"><svg class="ic"><use href="#i-lock"></use></svg></div>
+          <h2>Was die KI erhält</h2>
+          <p>Bevor etwas gesendet wird, bestätigen Sie einen Datenhinweis je Assistent.</p>
+          <ul>
+            <li>Gesendet werden die Fallübersicht, Ihre Nachricht und das, was Werkzeuge liefern</li>
+            <li>Das verarbeitet der jeweilige Anbieter nach seinen Bedingungen</li>
+            <li>Schlüssel liegen verschlüsselt im Schlüsselbund Ihres Systems, nie in der Mappe</li>
+          </ul>
+        </div>
+      </div>
+    </div></section><section role="tabpanel" class="tab-panel" id="panel-einstieg" aria-labelledby="tab-einstieg" tabindex="0" hidden><span id="einstieg" class="tab-anchor"></span><div style="">
+      <div class="page-head">
+        <span class="sec-kicker">Einstieg</span>
+        <h2>So fangen Sie an</h2>
+        <p>AKA Recht gibt es nicht zum freien Herunterladen. Sie erhalten die App von MikaTec, mit Anleitung.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><div class="num">1</div><h3>Anfragen</h3><p>Schreiben Sie kurz, worum es geht: privat oder beruflich, welcher Rechner. Sie bekommen eine Vorführung oder gleich die App.</p></div>
+        <div class="step"><div class="num">2</div><h3>Einrichten</h3><p>Die App braucht Node.js ab Version 26. Entpacken, einmal einrichten, starten; die Anleitung liegt bei.</p></div>
+        <div class="step"><div class="num">3</div><h3>Mappe wählen</h3><p>Beim ersten Start wählen Sie einen leeren Ordner als Mappe. Mit „Beispielfall laden“ sehen Sie Akte, Fristen und Chronologie an einem erfundenen Fall.</p></div>
+        <div class="step"><div class="num">4</div><h3>KI verbinden</h3><p>In den Einstellungen den Datenhinweis bestätigen, Abo oder Schlüssel wählen, Profil festlegen. Die Leiste öffnet sich mit „KI“ oder ⌘K.</p></div>
+      </div>
+    </div><div style="">
+      <div class="contact-box cta-band">
+        <h2>AKA Recht kennenlernen</h2>
+        <p>Vorführung mit dem Beispielfall, Fragen zur KI-Anbindung oder zur Einrichtung auf Ihrem Rechner.</p>
+        <div class="cta-row">
+          <a href="https://mika-tec.com/kontakt.html?anliegen=aka-recht#anfrage" class="btn btn-primary">Anfrage stellen <svg class="ic"><use href="#i-arrow"></use></svg></a>
+          <a href="https://github.com/Cehha79/aka-recht-info" class="btn btn-ghost" target="_blank" rel="noopener">Beschreibung auf GitHub</a>
+        </div>
+      </div>
+    </div></section><section role="tabpanel" class="tab-panel" id="panel-sicherheit" aria-labelledby="tab-sicherheit" tabindex="0" hidden><span id="sicherheit" class="tab-anchor"></span><div style="">
+      <div class="page-head">
+        <span class="sec-kicker">Sicherheit und Grenzen</span>
+        <h2>Was Sie wissen müssen</h2>
+        <p>Offen gesagt, bevor Sie anfangen.</p>
+      </div>
+      <div class="bento">
+        <div class="card b-7">
+          <div class="ico"><svg class="ic"><use href="#i-lock"></use></svg></div>
+          <h2>Wo Ihre Daten bleiben</h2>
+          <p>Die Akten liegen auf Ihrem Rechner. Die App ruft von sich aus keine fremden Adressen auf.</p>
+          <ul>
+            <li>Kein Konto, kein Cloud-Speicher, keine eigene KI in der App</li>
+            <li>Nur was Sie dem Assistenten schicken oder was er über Werkzeuge liest, geht an dessen Anbieter</li>
+            <li>Legen Sie die Sicherung in einen Cloud-Ordner, lädt Ihr System sie dorthin hoch</li>
+          </ul>
+        </div>
+        <div class="card b-5">
+          <h2>Stand und was noch fehlt</h2>
+          <ul>
+            <li>Version 1.0 ist auf dem Mac gebaut und geprüft; die KI-Leiste mit beiden Assistenten über Abo und Schlüssel am 21.10.2026 erprobt</li>
+            <li>Windows und Linux sind vorgesehen, aber noch nicht abgenommen</li>
+            <li>Ganze Fälle lassen sich in der App noch nicht archivieren oder entfernen</li>
+            <li>Ein fertiges Installationspaket gibt es noch nicht; die App läuft aus dem Programmordner mit Node.js</li>
+          </ul>
+        </div>
+        <div class="card b-7">
+          <div class="ico"><svg class="ic"><use href="#i-doc"></use></svg></div>
+          <h2>Keine Rechtsberatung</h2>
+          <p>AKA Recht ist kein Rechtsanwalt, und die KI auch nicht. Die Mappe hilft beim Ordnen, Prüfen und Formulieren.</p>
+          <ul>
+            <li>Ob eine Frist gilt und ob ein Schreiben so hinausgehen kann, prüfen Sie oder eine Fachanwältin, ein Fachanwalt</li>
+            <li>Antworten der KI können falsch sein; Normen und Urteile am Volltext nachlesen</li>
+            <li>Fristen, Vorlagen und Merkblätter gelten nur für deutsches Recht</li>
+          </ul>
+        </div>
+        <div class="card b-5">
+          <h2>Was die App nie tut</h2>
+          <ul>
+            <li>Nichts versenden, nichts einreichen, nichts löschen</li>
+            <li>Keine Zustimmung aus einem Dokument ableiten</li>
+            <li>Originale nicht verändern</li>
+          </ul>
+        </div>
+      </div>
+    </div></section><section role="tabpanel" class="tab-panel" id="panel-fragen" aria-labelledby="tab-fragen" tabindex="0" hidden><span id="fragen" class="tab-anchor"></span><div class="panel-group faq-panel" style="">
+    <details class="faq-section">
+    <summary class="faq-toggle">
+      <span class="sec-kicker">Häufige Fragen</span>
+      <span class="faq-chevron" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M6 9l6 6 6-6"></path></svg></span>
+    </summary>
+    <div class="page-head faq-head">
+      <h2>Gut zu wissen</h2>
+      <p>Die wichtigsten Fragen vorab.</p>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>Wie bekomme ich AKA Recht?</summary>
+        <div class="a">Über MikaTec. Es gibt keinen freien Download; Sie fragen an, bekommen auf Wunsch eine Vorführung und dann die App mit Anleitung. Umfang und Bedingungen besprechen wir persönlich.</div>
+      </details>
+      <details>
+        <summary>Brauche ich ein Konto oder Internet?</summary>
+        <div class="a">Für die Mappe nicht. Für die KI-Leiste brauchen Sie ein Abo oder einen Schlüssel bei Anthropic oder OpenAI und eine Internetverbindung, solange der Assistent arbeitet.</div>
+      </details>
+      <details>
+        <summary>Welche KI kann ich benutzen?</summary>
+        <div class="a">In der App: ASA (Claude von Anthropic) und AKA (OpenAI). Außerhalb der App bleibt die Mappe über MCP, die Schnittstelle für KI-Werkzeuge, für Claude Code, Claude Desktop, Codex und Cursor lesbar; schreibende Werkzeuge verlangen auch dort Ihre Bestätigung.</div>
+      </details>
+      <details>
+        <summary>Ändert die KI etwas in meiner Akte, ohne dass ich es merke?</summary>
+        <div class="a">Nein. Jedes Werkzeug, das in die Akte schreibt, ist ein fester Haltepunkt und fragt Sie vorher, auch im Profil „voll“. AKA bekommt die Werkzeuge nur lesend. Alles steht im Protokoll und im Journal des Falls.</div>
+      </details>
+      <details>
+        <summary>Was ist mit der früheren Fassung auf GitHub?</summary>
+        <div class="a">Bis Version 0.4 war AKA Recht eine Browser-Anwendung mit öffentlichem Quelltext. Seit Oktober 2026 ist das Repository privat, und die App wird als Desktop-App mit KI-Leiste weitergeführt. Die frühere Fassung wird nicht weiterentwickelt.</div>
+      </details>
+      <details>
+        <summary>Kann die Mappe eingescannte Briefe lesen?</summary>
+        <div class="a">Hat das PDF eine Textschicht, wird der Text direkt gelesen. Für Fotos und Scans gibt es die Texterkennung, wenn das Programm tesseract installiert ist. Erkannter Text kann Zeichen verwechseln, deshalb Daten, Beträge und Namen immer am Original prüfen.</div>
+      </details>
+      <details>
+        <summary>Gilt das auch für andere Länder?</summary>
+        <div class="a">Nein. Fristenrechner, Merkblätter und Vorlagen gelten nur für deutsches Recht. Zum Ordnen von Unterlagen lässt sich die Mappe überall nutzen.</div>
+      </details>
+      <details>
+        <summary>Beantwortet jemand Fragen zu meinem Fall?</summary>
+        <div class="a">Nein. Fragen zu einem echten Fall gehören zu einer Fachanwältin, einem Fachanwalt oder einer Beratungsstelle. Fragen zur App beantworte ich gern.</div>
+      </details>
+    </div>
+    </details>
+    </div></section></div>
+
+<footer class="site-footer"><span>MikaTec · Hasan Tepegöz · Böblingen</span><div><a href="https://mika-tec.com/kontakt.html">Kontakt</a><a href="https://mika-tec.com/impressum.html">Impressum</a><a href="https://mika-tec.com/datenschutz.html">Datenschutz</a></div></footer>
+
+</main>
+</body>
+</html>
